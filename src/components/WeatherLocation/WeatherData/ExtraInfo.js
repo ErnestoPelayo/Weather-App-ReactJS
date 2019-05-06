@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ExtraInfo = ({humidity , wind}) => (
-    <div>
-            <p>Informacion Extra</p>
-            <span> Humedad : {`${humidity}% -`} </span>
-            <span>Viento de : { `${wind}` }</span>
-    </div>
+    <div className="weatherExtraInfoCont">
+    <span className="extraInfoText">{`Humedad: ${humidity} % - `}</span>
+    <span className="extraInfoText">{`Vientos: ${wind}`}</span>
+</div>
 );
 
 ExtraInfo.propTypes = {
